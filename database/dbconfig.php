@@ -1,9 +1,9 @@
 <?php
 class Database
 {   
-    private $host = "localhost";
-    private $db_name = "newsite";
-    private $username = "root";
+        private $host = "db4free.net";
+    private $db_name = "shophapo";
+    private $username = "shophapo";
     private $password = "Jayluv3139";
     public $conn;
      
