@@ -1,0 +1,104 @@
+Options -indexes
+
+RewriteEngine On
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteRule ^cars/([0-9a-zA-Z]+) cars.php?user=$1 [NC,L]
+
+RewriteRule ^car/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) car.php?user=$1&id=$2 [NC,L]
+
+RewriteRule ^cateringservice/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) cateringservice.php?user=$1&id=$2 [NC,L]
+
+RewriteRule ^cosmetics/([0-9a-zA-Z]+) cosmetics.php?user=$1 [NC,L]
+
+RewriteRule ^catering/([0-9a-zA-Z]+) catering.php?user=$1 [NC,L]
+
+RewriteRule ^cateringorder/([0-9a-zA-Z]+) cateringorder.php?user=$1 [NC,L]
+
+RewriteRule ^cateringservice/([0-9a-zA-Z]+) cateringservice.php?id=$1 [NC,L]
+
+RewriteRule ^education/([0-9a-zA-Z]+) education.php?user=$1 [NC,L]
+
+RewriteRule ^farming/([0-9a-zA-Z]+) farming.php?user=$1 [NC,L]
+
+RewriteRule ^FARMPRODUCTS/([0-9a-zA-Z]+) FARMPRODUCTS.php?user=$1 [NC,L]
+
+RewriteRule ^list/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) list.php?user=$1&list=$2 [NC,L]
+
+RewriteRule ^hotels/([0-9a-zA-Z]+) hotels.php?user=$1 [NC,L]
+
+RewriteRule ^hotelref/([0-9a-zA-Z]+) hotelref.php?user=$1 [NC,L]
+
+RewriteRule ^contact/([0-9a-zA-Z]+) contact.php?user=$1 [NC,L]
+
+RewriteRule ^log-in/([0-9a-zA-Z]+) log-in.php?url=$1 [NC,L]
+
+RewriteRule ^food/([0-9a-zA-Z]+) food.php?user=$1 [NC,L]
+
+RewriteRule ^foodlist/([0-9a-zA-Z]+) foodlist.php?user=$1 [NC,L]
+
+RewriteRule ^fooddetails/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) fooddetails.php?user=$1&id=$2 [NC,L]
+
+RewriteRule ^generalshop/([0-9a-zA-Z]+) generalshop.php?user=$1 [NC,L]
+
+RewriteRule ^shopsproduct/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) shopsproduct.php?user=$1&id=$2 [NC,L]
+
+RewriteRule ^reserve/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) reserve.php?user=$1&roomid=$2 [NC,L]
+
+RewriteRule ^cosmetic/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) cosmetic.php?user=$1&id=$2 [NC,L]
+
+RewriteRule ^farmproduce/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) farmproduce.php?user=$1&id=$2 [NC,L]
+
+
+RewriteRule ^message/([0-9a-zA-Z]+) message.php?id=$1 [NC,L]
+
+RewriteRule ^payperadd/([0-9a-zA-Z]+) payperadd.php?url=$1 [NC,L]
+
+RewriteRule ^cart/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) cart.php?user=$1&add=$2 [NC,L]
+
+RewriteRule ^fcart/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) fcart.php?user=$1&add=$2 [NC,L]
+
+RewriteRule ^cart/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) cart.php?user=$1&delete=$2 [NC,L]
+
+
+RewriteRule ^categories/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) categories.php?user=$1&category=$2 [NC,L]
+
+#RewriteRule ^cart/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) cart.php?url=$1 [NC,L]
+
+
+
+RewriteRule ^ccart/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) ccart.php?user=$1&add=$2 [NC,L]
+
+RewriteRule ^editproducts/([0-9a-zA-Z]+) editproducts.php?generalshop_id=$1 [NC,L]
+
+RewriteRule ^editproducts/([0-9a-zA-Z]+) editproducts.php?cars_id=$1 [NC,L]
+
+RewriteRule ^editproducts/([0-9a-zA-Z]+) editproducts.php?hotel_id=$1 [NC,L]
+
+RewriteRule ^editproducts/([0-9a-zA-Z]+) editproducts.php?food_id=$1 [NC,L]
+
+RewriteRule ^editproducts/([0-9a-zA-Z]+) editproducts.php?catering_id=$1 [NC,L]
+
+RewriteRule ^editproducts/([0-9a-zA-Z]+) editproducts.php?cosmetics_id=$1 [NC,L]
+
+RewriteRule ^editproducts/([0-9a-zA-Z]+) editproducts.php?education_id=$1 [NC,L]
+
+
+
+RewriteRule ^deleteproduct/([0-9a-zA-Z]+) deleteproduct.php?generalshop_id=$1 [NC,L]
+
+RewriteRule ^deleteproduct/([0-9a-zA-Z]+) deleteproduct.php?cars_id=$1 [NC,L]
+
+RewriteRule ^deleteproduct/([0-9a-zA-Z]+) deleteproduct.php?hotel_id=$1 [NC,L]
+
+RewriteRule ^deleteproduct/([0-9a-zA-Z]+) deleteproduct.php?food_id=$1 [NC,L]
+
+RewriteRule ^deleteproduct/([0-9a-zA-Z]+) deleteproduct.php?catering_id=$1 [NC,L]
+
+RewriteRule ^deleteproduct/([0-9a-zA-Z]+) deleteproduct.php?cosmetics_id=$1 [NC,L]
+
+RewriteRule ^deleteproduct/([0-9a-zA-Z]+) deleteproduct.php?education_id=$1 [NC,L]
+
+
+RewriteRule ^order/([0-9a-zA-Z]+) order.php?generalshoporders_id=$1 [NC,L]
